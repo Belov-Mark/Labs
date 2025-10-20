@@ -1,4 +1,4 @@
-from . import isTorn
+from .utils import isTorn
 
 
 def transpose(mat):
