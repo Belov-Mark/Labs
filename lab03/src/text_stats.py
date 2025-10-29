@@ -1,8 +1,4 @@
 import sys
-import os
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-
 from lib.text import normalize, tokenize, count_freq, top_n
 
 
