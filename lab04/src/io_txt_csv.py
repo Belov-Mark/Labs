@@ -24,7 +24,7 @@ def write_csv(
                     f"Строка имеет длину {len(row)}, ожидалось {first_length}"
                 )
 
-    if header and rows:
+    if header:
         if len(header) != len(rows[0]):
             raise ValueError(
                 f"Заголовок имеет длину {len(header)}, а строки - {len(rows[0])}"
@@ -55,4 +55,4 @@ except FileNotFoundError:
 except UnicodeDecodeError:
     print("UnicodeDecodeError: Ошибка кодировки")
 
-write_csv([("test", 3)], "lab04/data/check.csv", header=("word", "count"))
+write_csv([("test", 3), ("test2", 4)], "lab04/data/check.csv", header=("word", "count"))
