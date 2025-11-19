@@ -1,6 +1,7 @@
 import re
 
-def normalize(text, *, casefold = True, yo2e = True):
+
+def normalize(text, *, casefold=True, yo2e=True):
     text = re.sub(r"[\t\r\n\f\v]", " ", text)
 
     if yo2e:
@@ -25,6 +26,7 @@ def count_freq(tokens):
         freq[token] = freq.get(token, 0) + 1
     return freq
 
-def top_n(freq, n = 2):
+
+def top_n(freq, n=2):
     sorted_items = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
     return sorted_items[:n]

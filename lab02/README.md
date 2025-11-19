@@ -1,6 +1,7 @@
 # Лаба 2
 
 Задача 1
+
 ```py
 print("Тесты min_max")
 def min_max(nums):
@@ -98,9 +99,11 @@ for array in tests:
     except TypeError as e:
         print(f"{array} - TypeError: {e}")
 ```
+
 ![](./img/arrays.png)
 
 Задача 2
+
 ```py
 def isTorn(mat):
     row_length = len(mat[0])
@@ -115,16 +118,16 @@ print("Тесты transpose")
 def transpose(mat):
     if not mat:
         return []
-    
+
     isTorn(mat)
-    
+
     result = []
     for i in range(len(mat[0])):
         new_row = []
         for j in range(len(mat)):
             new_row.append(mat[j][i])
         result.append(new_row)
-    
+
     return result
 
 
@@ -154,14 +157,14 @@ def row_sums(mat):
         return []
 
     isTorn(mat)
-    
+
     result = []
     for i in range(len(mat)):
         row_sum = 0
         for j in range(len(mat[i])):
             row_sum += mat[i][j]
         result.append(row_sum)
-    
+
     return result
 
 
@@ -197,7 +200,7 @@ def col_sums(mat):
         for i in range(len(mat)):
             col_sum += mat[i][j]
         result.append(col_sum)
-    
+
     return result
 
 
@@ -215,9 +218,11 @@ for array in tests:
     except ValueError as e:
         print(f"{array} - ValueError: {e}")
 ```
+
 ![](./img/matrix.png)
 
 Задача 3
+
 ```py
 print("Тесты format_record")
 
@@ -239,7 +244,7 @@ def format_record(rec):
         raise ValueError("ФИО не может быть пустым")
     if not group.strip():
         raise ValueError("Группа не может быть пустой")
-    
+
     fio_parts = fio.split()
 
     surname = fio_parts[0].capitalize()
@@ -275,4 +280,5 @@ for array in tests:
     except ValueError as e:
         print(f"{array} - ValueError: {e}")
 ```
+
 ![](./img/tuples.png)
