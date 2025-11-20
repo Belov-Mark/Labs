@@ -4,7 +4,6 @@ from lib.text import normalize, tokenize, count_freq, top_n
 
 
 def read_text_file(file_path):
-    """Чтение текстового файла"""
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             return f.read()
@@ -17,7 +16,6 @@ def read_text_file(file_path):
 
 
 def stats_command(args):
-    """Обработка команды stats"""
     text = read_text_file(args.input)
     normalized_text = normalize(text)
     tokens = tokenize(normalized_text)
@@ -31,7 +29,6 @@ def stats_command(args):
 
 
 def cat_command(args):
-    """Обработка команды cat"""
     try:
         with open(args.input, "r", encoding="utf-8") as f:
             for line_num, line in enumerate(f, 1):
