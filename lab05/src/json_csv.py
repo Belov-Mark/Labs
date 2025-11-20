@@ -45,9 +45,9 @@ def csv_to_json(csv_path: str, json_path: str) -> None:
 
 if __name__ == "__main__":
     json_path = "lab05/data/samples/people.json"
-    csv_out_path = "lab05/data/out/out_people.csv"
+    csv_out_path = "lab05/data/out/people.csv"
     json_to_csv(json_path, csv_out_path)
 
     csv_path = "lab05/data/samples/people.csv"
-    json_out_path = "lab05/data/out/out_people.json"
+    json_out_path = "lab05/data/out/people.json"
     csv_to_json(csv_path, json_out_path)

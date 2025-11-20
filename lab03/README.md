@@ -1,6 +1,7 @@
 # Лаба 3
 
 Задача 1
+
 ```py
 import re
 
@@ -75,9 +76,11 @@ for array in tests:
     result = top_n(count_freq((array)))
     print(f"{array} - {result}")
 ```
+
 ![](./img/text.png)
 
 Задача 2
+
 ```py
 import sys
 import os
@@ -112,4 +115,5 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
 ![](./img/text_stats.png)

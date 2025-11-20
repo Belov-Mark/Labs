@@ -63,7 +63,17 @@ except UnicodeDecodeError:
 write_csv([("test", 3), ("test2", 4)], "lab04/data/check.csv", header=("word", "count"))
 ```
 
-![](./img/.png)
+Результат работы [```text_report.py```](./src/text_report.py)
+
+![Результат работы](./img/text_report.png)
+
+Входной файл [```input.txt```](./data/input.txt)
+
+![Входной файл](./img/in_text_report.png)
+
+Выходной [```report.csv```](./data/report.csv)
+
+![Выходной файл](./img/out_text_report.png)
 
 Задача B
 
@@ -122,4 +132,14 @@ if __name__ == "__main__":
         print("Убедитесь, что файл data/input.txt существует")
 ```
 
-![](./img/.png)
+Результат работы [```oi_txt_csv.py```](./src/io_txt_csv.py)
+
+![Результат работы](./img/io_txt_csv.png)
+
+Входной файл [```input.txt```](./data/input.txt)
+
+![Входной файл](./img/in_text_report.png)
+
+Выходной [```check.csv```](./data/check.csv)
+
+![Выходной файл](./img/out_io_txt_csv.png)
