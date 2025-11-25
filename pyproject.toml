@@ -12,16 +12,22 @@ dependencies = [
 dev = [
     "black>=25.11.0",
     "isort>=7.0.0",
-    "mypy>=1.18.2",
     "pre-commit>=4.4.0",
     "pytest>=9.0.1",
-    "ruff>=0.14.5",
 ]
 
 [tool.black]
 line-length = 88
 target-version = ["py313"]
-skip-string-normalization = false
+extend-exclude = '''
+(
+  ^\.(venv|env)/|
+  ^data/|
+  ^images/|
+  ^__pacache__/|
+  ^.pytest_cache/
+)
+'''
 
 [tool.isort]
 profile = "black"
@@ -29,25 +35,12 @@ line_length = 88
 multi_line_output = 3
 include_trailing_comma = true
 
-[tool.ruff]
-line-length = 88
-select = ["E","F","W","C"]
-ignore = ["E501"]
-fix = true
-
-[tool.mypy]
-python_version = 3.13
-strict = true
-ignore_missing_imports = true
-
 [tool.pytest.ini_options]
 minversion = "7.0"
-addopts = "--maxfail=5 --disable-warnings -ra"
+addopts = "--maxfail=3 --disable-warnings -ra"
 testpaths = [
-    "lab02/tests",
-    "lab07/tests",
+    "src",
 ]
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["lib*"]
+[tool.uv.sources]
+"labs" = { path = "src" }
