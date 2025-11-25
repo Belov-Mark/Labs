@@ -1,4 +1,3 @@
-print("Тесты min_max")
 def min_max(nums):
     if not nums:
         raise ValueError("Список пуст — невозможно определить минимум и максимум.")
@@ -11,25 +10,6 @@ def min_max(nums):
             max_val = n
     return (min_val, max_val)
 
-tests = [
-    [3, -1, 5, 5, 0],
-    [42],
-    [-5, -2, -9],
-    [],
-    [1.5, 2, 2.0, -3.1]
-]
-
-for array in tests:
-    try:
-        result = min_max(array)
-        print(f"{array} - {result}")
-    except ValueError as e:
-        print(f"{array} - ValueError: {e}")
-
-print("\n")
-
-
-print("Тесты unique_sorted")
 
 def unique_sorted(nums):
     unique = []
@@ -50,24 +30,6 @@ def unique_sorted(nums):
 
     return unique
 
-tests = [
-    [3, 1, 2, 1, 3],
-    [],
-    [-1, -1, 0, 2, 2],
-    [1.0, 1, 2.5, 2.5, 0],
-]
-
-for array in tests:
-    try:
-        result = unique_sorted(array)
-        print(f"{array} - {result}")
-    except ValueError as e:
-        print(f"{array} - ValueError: {e}")
-
-print("\n")
-
-
-print("Тесты flatten")
 
 def flatten(mat):
     for row in mat:
@@ -79,17 +41,3 @@ def flatten(mat):
         for el in row:
             result += [el]
     return result
-
-tests = [
-    [[1, 2], [3, 4]],
-    [[1, 2], (3, 4, 5)],
-    [[1], [], [2, 3]],
-    [[1, 2], "ab"],
-]
-
-for array in tests:
-    try:
-        result = flatten(array)
-        print(f"{array} - {result}")
-    except TypeError as e:
-        print(f"{array} - TypeError: {e}")

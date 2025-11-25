@@ -5,10 +5,10 @@
 
 fio = input("ФИО: ").strip()
 
-fio_clean = ' '.join(fio.split())
+fio_clean = " ".join(fio.split())
 
 parts = fio_clean.split()
-initials = ''.join([part[0].upper() for part in parts])
+initials = "".join([part[0].upper() for part in parts])
 
 length = len(fio_clean)
 

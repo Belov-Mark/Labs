@@ -15,7 +15,7 @@ def format_record(rec):
         raise ValueError("ФИО не может быть пустым")
     if not group.strip():
         raise ValueError("Группа не может быть пустой")
-    
+
     fio_parts = fio.split()
 
     surname = fio_parts[0].capitalize()

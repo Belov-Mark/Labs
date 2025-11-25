@@ -1,19 +1,53 @@
 [project]
 name = "labs"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "mr_melov",email = "nikitapk01@gmail.com"}
-]
+description = "Проект с лабораторными работами по програмированию и алгоритмизации"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
-    openpyxl (>=3.1.5,<4.0.0)"
+    "openpyxl>=3.1.5",
 ]
 
-[tool.poetry]
-package-mode = false
+[dependency-groups]
+dev = [
+    "black>=25.11.0",
+    "isort>=7.0.0",
+    "mypy>=1.18.2",
+    "pre-commit>=4.4.0",
+    "pytest>=9.0.1",
+    "ruff>=0.14.5",
+]
 
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+skip-string-normalization = false
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.ruff]
+line-length = 88
+select = ["E","F","W","C"]
+ignore = ["E501"]
+fix = true
+
+[tool.mypy]
+python_version = 3.13
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--maxfail=5 --disable-warnings -ra"
+testpaths = [
+    "lab02/tests",
+    "lab07/tests",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lib*"]

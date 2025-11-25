@@ -3,8 +3,8 @@
 Вывод: sum=<...>; avg=<...> — значения печатать с 2 знаками.
 """
 
-num1 = float(input("a: ").replace(',', '.'))
-num2 = float(input("b: ").replace(',', '.'))
+num1 = float(input("a: ").replace(",", "."))
+num2 = float(input("b: ").replace(",", "."))
 
 total = num1 + num2
 average = total / 2
