@@ -1,6 +1,7 @@
 # Лабораторные работы
 
-```labs/
+```
+labs/
 ├── .gitignore
 ├── pyproject.toml
 ├── README.md
