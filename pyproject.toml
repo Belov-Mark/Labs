@@ -42,5 +42,9 @@ testpaths = [
     "src",
 ]
 
-[tool.uv.sources]
-"labs" = { path = "src" }
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["lib*"]

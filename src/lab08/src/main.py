@@ -1,7 +1,7 @@
 from pathlib import Path
 
-from models import Student
-from serialize import students_from_json, students_to_json
+from .models import Student
+from .serialize import students_from_json, students_to_json
 
 
 def main():

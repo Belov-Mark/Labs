@@ -9,7 +9,7 @@ age = int(input("Возраст: "))
 print(f"Привет, {name}! Через год тебе будет {age + 1}.")
 ```
 
-![Имя и возраст](./img/01_greeting.png)
+![Имя и возраст](./images/01_greeting.png)
 
 Задача 2
 
@@ -23,7 +23,7 @@ average = total / 2
 print(f"sum = {total:.2f}; avg = {average:.2f}")
 ```
 
-![](./img/02_sum_avg.png)
+![](./images/02_sum_avg.png)
 
 Задача 3
 
@@ -41,7 +41,7 @@ print(f"НДС: {vat_amount:.2f} ₽")
 print(f"Итого к оплате: {total:.2f} ₽")
 ```
 
-![](./img/03_discount_vat.png)
+![](./images/03_discount_vat.png)
 
 Задача 4
 
@@ -54,7 +54,7 @@ remaining_minutes = minutes % 60
 print(f"{hours:02d}:{remaining_minutes:02d}")
 ```
 
-![](./img/04_minutes_to_hhmm.png)
+![](./images/04_minutes_to_hhmm.png)
 
 Задача 5
 
@@ -72,7 +72,7 @@ print(f"Инициалы: {initials}.")
 print(f"Длина: {length}")
 ```
 
-![](./img/05_initials_and_len.png)
+![](./images/05_initials_and_len.png)
 
 Задача 6
 
@@ -94,7 +94,7 @@ for _ in range(n):
 print(f"out: {count_offline} {count_online}")
 ```
 
-![Задача со звёздочкой](./img/06_*.png)
+![Задача со звёздочкой](./images/06_*.png)
 
 Задача 7
 
@@ -122,4 +122,4 @@ for k in range(1, n):
             break
 ```
 
-![Задача со звёздочкой](./img/07_*.png)
+![Задача со звёздочкой](./images/07_*.png)

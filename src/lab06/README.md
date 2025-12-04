@@ -78,7 +78,7 @@ def main():
 
 Вывод
 
-![Вывод](./img/out_cat.png)
+![Вывод](./images/out_cat.png)
 
 Результат работы команды ```stats --input INPUT --top 5```
 
@@ -86,7 +86,7 @@ def main():
 
 Вывод
 
-![Вывод](./img/out_stats.png)
+![Вывод](./images/out_stats.png)
 
 Задача B
 

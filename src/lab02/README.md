@@ -100,7 +100,7 @@ for array in tests:
         print(f"{array} - TypeError: {e}")
 ```
 
-![](./img/arrays.png)
+![](./images/arrays.png)
 
 Задача 2
 
@@ -219,7 +219,7 @@ for array in tests:
         print(f"{array} - ValueError: {e}")
 ```
 
-![](./img/matrix.png)
+![](./images/matrix.png)
 
 Задача 3
 
@@ -281,4 +281,4 @@ for array in tests:
         print(f"{array} - ValueError: {e}")
 ```
 
-![](./img/tuples.png)
+![](./images/tuples.png)

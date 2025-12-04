@@ -77,7 +77,7 @@ for array in tests:
     print(f"{array} - {result}")
 ```
 
-![](./img/text.png)
+![](./images/text.png)
 
 Задача 2
 
@@ -116,4 +116,4 @@ if __name__ == "__main__":
     main()
 ```
 
-![](./img/text_stats.png)
+![](./images/text_stats.png)
